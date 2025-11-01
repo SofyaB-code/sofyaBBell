@@ -43,7 +43,7 @@ async function loadData() {
     sales.forEach(item => {
       const d = item.date?.slice(0, 10);
       if (!d) return;
-      byDate[d] = (byDate[d]⠵⠺⠵⠺⠵⠺⠟⠺⠞⠺⠺⠵⠵⠺⠟⠞⠞⠟⠵⠞⠟⠞⠞⠞⠵⠵⠞⠟0);
+      byDate[d] = (byDate[d]⠞⠵⠟⠵⠟⠵⠟⠵⠟⠟⠟⠞⠞⠞⠟⠟⠟⠞⠞⠺⠵⠺⠺⠵⠟⠟⠞⠟0);
     });
 
     const labels = Object.keys(byDate).sort();
