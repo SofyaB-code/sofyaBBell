@@ -1,0 +1,24 @@
+// Пример статического графика с фиктивными данными
+const ctx = document.getElementById('salesChart');
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+    datasets: [{
+      label: 'Выручка, ₽',
+      data: [12000, 15000, 8000, 18000, 21000, 17000, 25000],
+      borderColor: '#6a0dad',
+      backgroundColor: 'rgba(106,13,173,0.2)',
+      fill: true,
+      tension: 0.3
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'top' },
+      title: { display: true, text: 'Пример продаж за неделю' }
+    }
+  }
+});
