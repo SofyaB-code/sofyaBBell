@@ -4,11 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wildberries Аналитика Софьи</title>
+
+  <!-- Подключаем Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+
+<body style="font-family: sans-serif; text-align: center; margin-top: 50px; background-color: #fafafa;">
   <h1>Сервис аналитики Wildberries</h1>
   <p>Привет, Софья! 👋</p>
-  <p>Этот сайт пока пуст, но уже готов принимать данные аналитики.</p>
-  <p>Когда добавим код или API, появятся графики и статистика.</p>
+  <p>Теперь сайт подключён к API Wildberries и готов показывать данные.</p>
+
+  <!-- Контейнер для графика -->
+  <canvas id="salesChart" width="800" height="400" style="margin-top: 30px;"></canvas>
+
+  <!-- Сводная информация -->
+  <div id="extra" style="margin-top: 40px; font-size: 18px;"></div>
+
+  <!-- Подключаем твой код -->
+  <script src="script.js"></script>
 </body>
 </html>
