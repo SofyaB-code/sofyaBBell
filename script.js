@@ -1,6 +1,6 @@
 // === НАЧАЛО КОДА ===
 // 🔑 Сюда вставь свой личный API-токен WB
-const API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJhY2MiOjEsImVudCI6MSwiZXhwIjoxNzc3NzgwOTMwLCJpZCI6IjAxOWE0MDI3LTlmZDQtN2I4ZS1hNzIzLWYyNjNkNWY4ZDAwYiIsImlpZCI6MjAxNTQ2MTksIm9pZCI6MjgyNzg0LCJzIjoxNjEyNiwic2lkIjoiNzZlZmM0NjktYTgxNS00NGEyLWIzMjEtNzMzNzI5ZjY0NjBlIiwidCI6ZmFsc2UsInVpZCI6MjAxNTQ2MTl9.kkC7tOSVAMfjqHW_Nb7G1xrcusbD7ijizu-I50sgHoRGf9I5QydxePFZ48siQwKn9fBhZwdDQPJYcRyAwfPTjw";
+const API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJhY2MiOjEsImVudCI6MSwiZXhwIjoxNzc3Nzg2ODYzLCJpZCI6IjAxOWE0MDgyLTJiNzItNzY0Ni1hN2VlLTk0Y2M2MWFmMGY3ZiIsImlpZCI6MjAxNTQ2MTksIm9pZCI6MjgyNzg0LCJzIjoxMDczNzU3NDM4LCJzaWQiOiI3NmVmYzQ2OS1hODE1LTQ0YTItYjMyMS03MzM3MjlmNjQ2MGUiLCJ0IjpmYWxzZSwidWlkIjoyMDE1NDYxOX0.7Mz6u7hBEO2ClEkTud9QQNDSSXIFL20dp1pr0obX01n9aijurW5NGLOcwiuDJpBWNuQOCroi-o1_CkSWf_YO_w";
 
 // --- Настройки периода (за последние 7 дней)
 const today = new Date();
