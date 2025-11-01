@@ -12,7 +12,7 @@ const API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwOTA0djEiLCJ0eXAiOiJKV1Qif
 const HEADERS = { Authorization: API_TOKEN };
 const BASE_URL = "https://statistics-api.wildberries.ru/api/v1/supplier";
 
-// 📦 Продажи
+// 📊 Продажи
 app.get("/api/sales", async (req, res) => {
   const dateTo = new Date().toISOString().split("T")[0];
   const dateFrom = new Date(Date.now() - 7 * 24 * 3600 * 1000)
