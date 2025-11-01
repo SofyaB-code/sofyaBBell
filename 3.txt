@@ -1,6 +1,6 @@
 // === НАЧАЛО КОДА ===
 // 🔑 Сюда вставь свой личный API-токен WB
-const API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJhY2MiOjEsImVudCI6MSwiZXhwIjoxNzc3NzgwOTMwLCJpZCI6IjAxOWE0MDI3LTlmZDQtN2I4ZS1hNzIzLWYyNjNkNWY4ZDAwYiIsImlpZCI6MjAxNTQ2MTksIm9pZCI6MjgyNzg0LCJzIjoxNjEyNiwic2lkIjoiNzZlZmM0NjktYTgxNS00NGEyLWIzMjEtNzMzNzI5ZjY0NjBlIiwidCI6ZmFsc2UsInVpZCI6MjAxNTQ2MTl9.kkC7tOSVAMfjqHW_Nb7G1xrcusbD7ijizu-I50sgHoRGf9I5QydxePFZ48siQwKn9fBhZwdDQPJYcRyAwfPTjw";  // пример: const API_TOKEN = "eyJhbGciOi...";
+const API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJhY2MiOjEsImVudCI6MSwiZXhwIjoxNzc3NzgwOTMwLCJpZCI6IjAxOWE0MDI3LTlmZDQtN2I4ZS1hNzIzLWYyNjNkNWY4ZDAwYiIsImlpZCI6MjAxNTQ2MTksIm9pZCI6MjgyNzg0LCJzIjoxNjEyNiwic2lkIjoiNzZlZmM0NjktYTgxNS00NGEyLWIzMjEtNzMzNzI5ZjY0NjBlIiwidCI6ZmFsc2UsInVpZCI6MjAxNTQ2MTl9.kkC7tOSVAMfjqHW_Nb7G1xrcusbD7ijizu-I50sgHoRGf9I5QydxePFZ48siQwKn9fBhZwdDQPJYcRyAwfPTjw";
 
 // --- Настройки периода (за последние 7 дней)
 const today = new Date();
@@ -11,7 +11,7 @@ const dateTo = today.toISOString().split('T')[0];
 
 // --- URL запросов к Wildberries
 const BASE_URL = "https://statistics-api.wildberries.ru/api/v1/supplier";
-const URL_SALES = `${BASE_URL}/reportDetailByPeriod?dateFrom=${dateFrom}&dateTo=${dateTo}&limit=1000`;
+const URL_SALES = ${BASE_URL}/reportDetailByPeriod?dateFrom=${dateFrom}&dateTo=${dateTo}&limit=1000;
 const URL_STOCKS = ${BASE_URL}/stocks?dateFrom=${dateFrom}&dateTo=${dateTo};
 const URL_ADS = "https://advert-api.wb.ru/adv/v1/analytics";
 
@@ -30,7 +30,7 @@ async function loadData() {
     try {
       const adsResp = await fetch(URL_ADS, { headers: { Authorization: API_TOKEN } });
       ads = await adsResp.json();
-    } catch(e) {
+    } catch (e) {
       console.warn("Не удалось загрузить рекламу:", e.message);
     }
 
@@ -43,8 +43,7 @@ async function loadData() {
     sales.forEach(item => {
       const d = item.date?.slice(0, 10);
       if (!d) return;
-      byDate[d] = (byDate[d]From}&dateTo=${dateTo}`;
-const U0);
+      byDate[d] = (byDate[d]⠵⠺⠵⠺⠵⠺⠟⠺⠞⠺⠺⠵⠵⠺⠟⠞⠞⠟⠵⠞⠟⠞⠞⠞⠵⠵⠞⠟0);
     });
 
     const labels = Object.keys(byDate).sort();
