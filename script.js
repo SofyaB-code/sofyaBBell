@@ -1,6 +1,6 @@
 // === НАЧАЛО КОДА ===
 // 🔑 Сюда вставь свой личный API-токен WB
-const API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJhY2MiOjEsImVudCI6MSwiZXhwIjoxNzc3NzgwOTMwLCJpZCI6IjAxOWE0MDI3LTlmZDQtN2I4ZS1hNzIzLWYyNjNkNWY4ZDAwYiIsImlpZCI6MjAxNTQ2MTksIm9pZCI6MjgyNzg0LCJzIjoxNjEyNiwic2lkIjoiNzZlZmM0NjktYTgxNS00NGEyLWIzMjEtNzMzNzI5ZjY0NjBlIiwidCI6ZmFsc2UsInVpZCI6MjAxNTQ2MTl9.kkC7tOSVAMfjqHW_Nb7G1xrcusbD7ijizu-I50sgHoRGf9I5QydxePFZ48siQwKn9fBhZwdDQPJYcRyAwfPTjw";
+const API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwOTA0djEiLCJ0eXAiOiJKV1QifQ.eyJhY2MiOjEsImVudCI6MSwiZXhwIjoxNzc3Nzg1MzQ0LCJpZCI6IjAxOWE0MDZhLWZiYTAtNzdiYi05YzJlLTg3Nzk5YzkxOTY3ZCIsImlpZCI6MjAxNTQ2MTksIm9pZCI6MjgyNzg0LCJzIjoxNjEyNiwic2lkIjoiNzZlZmM0NjktYTgxNS00NGEyLWIzMjEtNzMzNzI5ZjY0NjBlIiwidCI6ZmFsc2UsInVpZCI6MjAxNTQ2MTl9.0wn4PYgGXvts8SerhDXShYohV37qs9zR3IGS25hi2VUzJM-pbpVi4xNUsBgO1ltuA4xR1SKWV8SOvUi0yDKjhQ";
 
 // --- Настройки периода (за последние 7 дней)
 const today = new Date();
@@ -43,7 +43,7 @@ async function loadData() {
     sales.forEach(item => {
       const d = item.date?.slice(0, 10);
       if (!d) return;
-      byDate[d] = (byDate[d]⠞⠵⠟⠵⠟⠵⠟⠵⠟⠟⠟⠞⠞⠞⠟⠟⠟⠞⠞⠺⠵⠺⠺⠵⠟⠟⠞⠟0);
+      byDate[d] = (byDate[d]⠵⠺⠵⠺⠵⠺⠟⠺⠞⠺⠺⠵⠵⠺⠟⠞⠞⠟⠵⠞⠟⠞⠞⠞⠵⠵⠞⠟0);
     });
 
     const labels = Object.keys(byDate).sort();
