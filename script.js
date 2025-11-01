@@ -12,8 +12,8 @@ const dateTo = today.toISOString().split('T')[0];
 // --- URL запросов к Wildberries
 const BASE_URL = "https://statistics-api.wildberries.ru/api/v1/supplier";
 const URL_SALES = ${BASE_URL}/reportDetailByPeriod?dateFrom=${dateFrom}&dateTo=${dateTo}&limit=1000;
+const URL_SALES = ${BASE_URL}/reportDetailByPeriod?dateFrom=${dateFrom}&dateTo=${dateTo}&limit=1000;
 const URL_STOCKS = ${BASE_URL}/stocks?dateFrom=${dateFrom}&dateTo=${dateTo};
-const URL_ADS = "https://advert-api.wb.ru/adv/v1/analytics";
 
 async function loadData() {
   try {
@@ -43,7 +43,7 @@ async function loadData() {
     sales.forEach(item => {
       const d = item.date?.slice(0, 10);
       if (!d) return;
-      byDate[d] = (byDate[d]⠞⠟⠟⠺⠟⠺⠞⠺⠺⠺⠟⠺⠵⠺⠺⠟⠺⠺⠞⠺⠟⠞⠞⠞⠞⠺⠟⠟0);
+    byDate[d] = (byDate[d]=(byDate[d]0)+(item.retail_amount 0);
     });
 
     const labels = Object.keys(byDate).sort();
@@ -91,3 +91,4 @@ async function loadData() {
 
 loadData();
 // === КОНЕЦ КОДА ===
+
