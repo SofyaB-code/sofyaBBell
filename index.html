@@ -3,15 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval'; object-src 'none';">
   <title>Wildberries Аналитика Софьи</title>
 </head>
-<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+<body style="font-family: sans-serif; text-align: center; margin-top: 40px;">
   <h1>Сервис аналитики Wildberries</h1>
   <p>Привет, Софья! 👋</p>
-  <p>Этот сайт готов принимать данные аналитики Wildberries.</p>
-  <p>После подключения API появятся графики и статистика.</p>
+  <p>Этот сайт подключён к API и готов показывать данные в реальном времени.</p>
 
-  <!-- Подключение скрипта -->
-<script src="/api/proxy"></script>
+  <div id="output" style="white-space: pre-wrap; text-align: left; max-width: 800px; margin: 30px auto; font-size: 14px; background: #f9f9f9; border-radius: 8px; padding: 10px;"></div>
+
+  <script>
+    async function loadData() {
+      const output = document.getElementById("output");
+      output.innerHTML = "⏳ Загружаю данные с Wildberries...";
+      try {
+        const res = await fetch('/api/proxy');
+        if (!res.ok) throw new Error("Ошибка сети: " + res.status);
+        const data = await res.json();
+        console.log("✅ Получены данные:", data);
+        output.innerHTML = "✅ Первые 5 строк данных:\n\n" + JSON.stringify(data.slice(0, 5), null, 2);
+      } catch (err) {
+        console.error("Ошибка при загрузке:", err);
+        output.innerHTML = "❌ Ошибка: " + err.message;
+      }
+    }
+    loadData();
+  </script>
 </body>
 </html>
